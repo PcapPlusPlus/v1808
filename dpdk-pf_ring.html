@@ -7,11 +7,11 @@ section: dpdk-pfring
 
 <h2>DPDK support</h2>
 <p>The Data Plane Development Kit (DPDK) is a set of data plane libraries and network interface controller drivers for fast packet processing. The DPDK provides a programming framework for Intel x86 processors and enables faster development of high speed data packet networking applications. It is provided and supported under the open source BSD license (taken from <a href="https://en.wikipedia.org/wiki/Data_Plane_Development_Kit">Wikipedia</a> )</p>
-<p>DPDK provides packet processing in line rate using kernel bypass for a large range of network interface cards. Notice that not every NIC supports DPDK as the NIC needs to support the kernel bypass feature. You can read more about DPDK in <a href="http://dpdk.org/">DPDK's web-site</a> and get a list of supported NICs <a href="http://dpdk.org/doc/nics">here</a>.</p>
+<p>DPDK provides packet processing in line rate using kernel bypass for a large range of network interface cards. Notice that not every NIC supports DPDK as the NIC needs to support the kernel bypass feature. You can read more about DPDK in <a href="https://dpdk.org/">DPDK's web-site</a> and get a list of supported NICs <a href="https://dpdk.org/doc/nics">here</a>.</p>
 <p>Also, you can get more details about DPDK and PcapPlusPlus wrap for DPDK in the documentation of DpdkDevice.h and DpdkDeviceList.h header files.</p>
 
 <h6><strong>Download and install</strong></h6>
-<p>Download and install instructions for DPDK are on this page: <a href="http://dpdk.org/download">http://dpdk.org/download</a></p>
+<p>Download and install instructions for DPDK are on this page: <a href="https://dpdk.org/download">https://dpdk.org/download</a></p>
 <p>Please make sure to install DPDK in the following way:</p>
 <pre><code class="cpp">make config T=[platform_type_string] && make</code></pre><p></p>
 
@@ -110,10 +110,10 @@ Setup DPDK completed</code>
 
 <h2>PF_RING support</h2>
 <p>PcapPlusPlus provides a clean and simple C++ wrapper API for Vanilla PF_RING. Currently only Vanilla PF_RING is supported which provides significant performance improvement in comparison to libpcap or Linux kernel, but PF_RING DNA or ZC (which allows kernel bypass and zero-copy of packets from NIC to user-space) isn't supported. I hope I'll be able to add it in the future.</p>
-<p>You can read more about PF_RING in ntop web-site: <a href="http://www.ntop.org/products/pf_ring/">http://www.ntop.org/products/pf_ring/</a> and in PF_RING user guide: <a href="https://svn.ntop.org/svn/ntop/trunk/PF_RING/doc/UsersGuide.pdf">https://svn.ntop.org/svn/ntop/trunk/PF_RING/doc/UsersGuide.pdf</a></p>
+<p>You can read more about PF_RING in ntop web-site: <a href="https://www.ntop.org/products/pf_ring/">https://www.ntop.org/products/pf_ring/</a> and in PF_RING user guide: <a href="https://svn.ntop.org/svn/ntop/trunk/PF_RING/doc/UsersGuide.pdf">https://svn.ntop.org/svn/ntop/trunk/PF_RING/doc/UsersGuide.pdf</a></p>
 <p>In order to compile PcapPlusPlus with PF_RING you need to:</p>
 <ol>
-  <li>Download PF_RING from ntop's web-site: <a href="http://www.ntop.org/get-started/download/#PF_RING">http://www.ntop.org/get-started/download/#PF_RING</a></li>
+  <li>Download PF_RING from ntop's web-site: <a href="https://www.ntop.org/get-started/download/#PF_RING">https://www.ntop.org/get-started/download/#PF_RING</a></li>
   <li>Note that I used PcapPlusPlus with PF_RING versions 6.2.0 - 6.4.1. I can't guarantee it'll work with previous or later versions</li>
   <li>Once PF_RING is compiled successfully, you need to run PcapPlusPlus <strong>configure-linux.sh</strong> and type "y" in "Compile PcapPlusPlus with PF_RING?"</li>
   <li>Then you can compile PcapPlusPlus as usual</li>

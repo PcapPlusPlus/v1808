@@ -73,14 +73,14 @@ section: download
 	<ul>
 	  <li>Download and installation instructions for <strong>MinGW32</strong>:
 		<ul>
-		  <li>The fastest way I found for installing mingw32 was through this link: <a href="http://www.mingw.org/wiki/Getting_Started">http://www.mingw.org/wiki/Getting_Started</a></li>
+		  <li>The fastest way I found for installing mingw32 was through this link: <a href="https://www.mingw.org/wiki/Getting_Started">https://www.mingw.org/wiki/Getting_Started</a></li>
 		  <li>Download "mingw-get-setup.exe", run it and follow the instructions</li>
 		  <li>By default the pthreads library is not installed so you need to ask to install it. It can be done during the installation process or afterwards with "mingw-get.exe" (MinGW installation manager)</li>
 		  <li>In the MinGW installation manager search for all packages containing "pthreads" and mark them for installation. Make sure the pthreads-win32 version you install is <strong>2.10</strong> or later</li>
 		  <li>Choose Installation->Update Catalogue</li>
 		  <li>If you prefer to install pthreads manually please follow these steps:
 			<ul>
-			  <li>Download <a href="http://ftp.ntua.gr/mirror/mingw/MinGW/Base/pthreads-w32/pthreads-w32-2.10-pre-20160821-1/pthreads-GC-w32-2.10-mingw32-pre-20160821-1-dev.tar.xz">pthreads for MinGW</a></li>
+			  <li>Download <a href="https://ftp.ntua.gr/mirror/mingw/MinGW/Base/pthreads-w32/pthreads-w32-2.10-pre-20160821-1/pthreads-GC-w32-2.10-mingw32-pre-20160821-1-dev.tar.xz">pthreads for MinGW</a></li>
 			  <li>Extract it with 7-Zip: <strong>7z.exe e pthreads-GC-w32-2.10-mingw32-pre-20160821-1-dev.tar.xz -oC:\pthreads && 7z.exe x C:\pthreads\pthreads-GC-w32-2.10-mingw32-pre-20160821-1-dev.tar -oC:\pthreads</strong></li>
 			  <li>Copy the include files to MinGW folder: <strong>xcopy /Y C:\pthreads\include\* C:\MinGW\include</strong></li>
 			  <li>Copy the lib files to MinGW folder: <strong>xcopy /Y C:\pthreads\lib\* C:\MinGW\lib</strong></li>
@@ -95,7 +95,7 @@ section: download
       <li>Make sure to choose the <b>i686 option</b> (which is 32-bit). PcapPlusPlus doesn't support MinGW-w64 64-bit (x86_64)</li>
       <li>Make sure to choose <b>POSIX threads</b> and not win32 threads</li>
       <li>Follow the instruction in the installation wizard</li>
-      <li>Install MSYS or MSYS2. MSYS2 installer can be downloaded from here: <a href="http://msys2.github.io/">http://msys2.github.io/</a></li>
+      <li>Install MSYS or MSYS2. MSYS2 installer can be downloaded from here: <a href="https://msys2.github.io/">https://msys2.github.io/</a></li>
       <li>Make sure to download and install the <b>msys2-i686</b> installer and not the msys2-x86_64 installer</li>
       <li>Add the following folders to your <code class="cpp">PATH</code> environment variable: 
         <ul>
@@ -122,7 +122,7 @@ section: download
 <h6><strong>Prerequisites</strong></h6>
 <p>In order to compile PcapPlusPlus on Linux you need the following components:</p>
 <ol>
-  <li><strong>libpcap developers pack</strong> - containing the libpcap library PcapPlusPlus is linking with plus relevant header files. You can download it from <a href="http://www.tcpdump.org/#latest-release">http://www.tcpdump.org/#latest-release</a> or through package management engines such as apt-get/yum: <pre><code class="cpp">sudo apt-get install libpcap-dev</code></pre> or: <pre><code class="cpp">sudo yum install libpcap-devel</code></pre></li>
+  <li><strong>libpcap developers pack</strong> - containing the libpcap library PcapPlusPlus is linking with plus relevant header files. You can download it from <a href="https://www.tcpdump.org/#latest-release">https://www.tcpdump.org/#latest-release</a> or through package management engines such as apt-get/yum: <pre><code class="cpp">sudo apt-get install libpcap-dev</code></pre> or: <pre><code class="cpp">sudo yum install libpcap-devel</code></pre></li>
   <li>Make sure you have the libstdc++-static package. If not, you can install it via <i>yum</i> or <i>apt-get</i></li>
 </ol>
 <h6><strong>Configuration and compilation</strong></h6>
